@@ -1,0 +1,17 @@
+﻿Build started 2/10/2016 12:31:03 AM.
+     1>Project "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\GameofLife2.vcxproj" on node 2 (Build target(s)).
+     1>PreLinkEvent:
+         if not exist "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Debug.win32\" mkdir "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Cocos\Cocos2d-x\cocos2d-x-3.10\prebuilt\win32\*.*" "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Debug.win32\"
+         
+         :VCEnd
+         Sharing violation
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(127,5): error MSB3073: The command "if not exist "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Debug.win32\" mkdir "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Debug.win32\"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(127,5): error MSB3073: xcopy /Y /Q "C:\Cocos\Cocos2d-x\cocos2d-x-3.10\prebuilt\win32\*.*" "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Debug.win32\"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(127,5): error MSB3073: 
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(127,5): error MSB3073: :VCEnd" exited with code 4.
+     1>Done Building Project "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\GameofLife2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.48

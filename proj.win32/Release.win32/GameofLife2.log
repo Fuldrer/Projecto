@@ -1,0 +1,21 @@
+﻿Build started 2/10/2016 12:34:03 AM.
+     1>Project "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\GameofLife2.vcxproj" on node 2 (Build target(s)).
+     1>PreLinkEvent:
+         if not exist "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\" mkdir "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\"
+         xcopy /Y /Q "C:\Cocos\Cocos2d-x\cocos2d-x-3.10\prebuilt\win32\*.*" "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\"
+         
+         :VCEnd
+         60 File(s) copied
+       Link:
+         GameofLife2.vcxproj -> C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\GameofLife2.exe
+       CustomBuildStep:
+         if not exist "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\" mkdir "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\"
+         xcopy "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\..\Resources" "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\" /D /E /I /F /Y
+               
+         :VCEnd
+         0 File(s) copied
+     1>Done Building Project "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\GameofLife2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.09
