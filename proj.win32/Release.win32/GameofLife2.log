@@ -1,12 +1,26 @@
-﻿Build started 2/10/2016 12:34:03 AM.
+﻿Build started 2/10/2016 12:50:40 AM.
      1>Project "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\GameofLife2.vcxproj" on node 2 (Build target(s)).
-     1>PreLinkEvent:
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\audio\include" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\external" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\external\chipmunk\include\chipmunk" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\extensions" /I..\Classes /I.. /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external" /Zi /nologo /W3 /WX- /MP /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release.win32\\" /Fd"Release.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\HelloWorldScene.cpp Grid.cpp
+         HelloWorldScene.cpp
+         Grid.cpp
+       PreLinkEvent:
          if not exist "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\" mkdir "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\"
          xcopy /Y /Q "C:\Cocos\Cocos2d-x\cocos2d-x-3.10\prebuilt\win32\*.*" "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\"
          
          :VCEnd
          60 File(s) copied
        Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\GameofLife2.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\ /LIBPATH:C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\ libcurl_imp.lib websockets.lib opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\GameofLife2.pdb" /SUBSYSTEM:WINDOWS,"5.01" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\GameofLife2.lib" /MACHINE:X86 /SAFESEH Release.win32\game.res
+         Release.win32\AppDelegate.obj
+         Release.win32\HelloWorldScene.obj
+         Release.win32\Creature.obj
+         Release.win32\Grid.obj
+         Release.win32\GridReader.obj
+         Release.win32\main.obj
+            Creating library C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\GameofLife2.lib and object C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\GameofLife2.exp
+         Generating code
+         Finished generating code
          GameofLife2.vcxproj -> C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\GameofLife2.exe
        CustomBuildStep:
          if not exist "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\" mkdir "C:\Users\Carlos\Documents\Cocos\CocosProjects\GameofLife2\proj.win32\Release.win32\"
@@ -18,4 +32,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.09
+Time Elapsed 00:00:18.69

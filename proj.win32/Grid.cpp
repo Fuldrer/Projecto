@@ -25,7 +25,7 @@ void Grid::onEnter()
 
 	this->setupGrid();
 
-	//this->setupTouchHandling();
+	this->setupTouchHandling();
 }
 
 void Grid::setupGrid()
@@ -48,7 +48,59 @@ void Grid::setupGrid()
 			gridSprite->addChild(creature);
 
 			gridArray.pushBack(creature);
-			creature->setIsAlive(true);
 		}
 	}
+}
+
+void Grid::setupTouchHandling()
+{
+	auto touchListener = EventListenerTouchOneByOne::create();
+
+	touchListener->onTouchBegan = [&](Touch* touch, Event* event)
+	{
+		Sprite* gridSprite = this->getChildByName<Sprite*>("grid");
+
+		Vec2 gridTouchLocation = gridSprite->convertTouchToNodeSpace(touch);
+
+		Creature* touchedCreature = this->creatureForTouchLocation(gridTouchLocation);
+
+		if (touchedCreature)
+		{
+			touchedCreature->setIsAlive(!touchedCreature->getIsAlive());
+		}
+
+		return true;
+	};
+
+	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
+}
+
+Creature* Grid::creatureForTouchLocation(Vec2 touchLocation)
+{
+	if (touchLocation.x < 0.0f || touchLocation.y < 0.0f)
+	{
+		return nullptr;
+	}
+
+	int row = touchLocation.y / cellHeight;
+	int col = touchLocation.x / cellWidth;
+
+	if (this->isValidIndex(row, col))
+	{
+		return gridArray.at(this->indexForRowColumn(row, col));
+	}
+	else
+	{
+		return nullptr;
+	}
+}
+
+bool Grid::isValidIndex(int row, int col)
+{
+	return (row >= 0 && row < ROWS) && (col >= 0 && col < COLUMNS);
+}
+
+int Grid::indexForRowColumn(int row, int col)
+{
+	return row * COLUMNS + col;
 }
